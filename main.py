@@ -1,5 +1,5 @@
 import os
-import pandas  # noqa We are just importing this to prove the dependency installed correctly
+#import pandas  # noqa We are just importing this to prove the dependency installed correctly
 
 
 def main():
