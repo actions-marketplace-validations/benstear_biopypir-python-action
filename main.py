@@ -3,7 +3,7 @@ import os
 
 
 def main():
-    my_input = os.environ["INPUT_myNUM"]
+    my_input = os.environ["INPUT_MYNUM"]
 
     my_output = 10000*my_input
 
