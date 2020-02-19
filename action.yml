@@ -4,6 +4,7 @@ author: "Ben Stear"
 inputs:
   myNUM:
     description: "any string will do"
+    required: false
     default: "6"
 outputs:
   myOUTPUT:
@@ -11,3 +12,7 @@ outputs:
 runs:
   using: "docker"
   image: "Dockerfile"
+  
+branding:
+  icon: 'anchor'  
+  color: 'green'
