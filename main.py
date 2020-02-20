@@ -3,9 +3,9 @@ import os
 
 
 def main():
-    my_input = os.environ["INPUT_MYNUM"]
+    my_input = os.environ["INPUT_MYREPO"]
 
-    my_output = 100*int(my_input)
+    my_output = str(my_input)
 
     print(f"::set-output name=myOUTPUTt::{my_output}")
 
