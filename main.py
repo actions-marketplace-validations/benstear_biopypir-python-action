@@ -5,7 +5,7 @@ import os
 def main():
     my_input = os.environ["INPUT_MYREPO"]
 
-    my_output = str(my_input)
+    #my_output = str(my_input)
 
     #print(f"::set-output name=myOUTPUT::{my_output}")
     print(f"www.github.com/{my_input}")
