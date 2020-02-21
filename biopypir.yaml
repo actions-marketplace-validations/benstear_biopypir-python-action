@@ -1,0 +1,17 @@
+name: Workflow using my own action
+on: [push,  pull-request, issue]
+jobs:
+  passrepo:
+    runs-on: ubuntu-latest
+    steps:
+    - name: STEP_1 Dump GitHub context
+      env:
+        GITHUB_REPO: ${{ toJson(github.repository) }}
+      run: echo "$GITHUB_REPOT"
+
+   - uses: benstear/biopypir-python-action@master
+      with:
+        myrepo: ${{ toJson(github.repository) }}     
+     
+     
+     
