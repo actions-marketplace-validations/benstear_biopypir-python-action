@@ -6,6 +6,19 @@ inputs:
     description: "name of your repo"
     required: true
     default: ${{ github.repository }}
+ python_version:
+    description: "Python version to test package with"
+    required: true
+    default: 3.6
+ os:
+    description: "Python version to test package with"
+    required: true
+    default: [ubuntu-latest,macOS-latest]
+ lint:
+    description: "Conduct Linting"
+    required: false
+    default: true
+  
 outputs:
   myOUTPUT:
     description: "Test result"
