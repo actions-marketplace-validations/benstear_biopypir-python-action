@@ -3,8 +3,12 @@ import os
 
 
 def main():
-    my_input = os.environ["INPUT_MYREPO"]
-
+    repo_name = os.environ["INPUT_MYREPO"]
+    python_version = os.environ["INPUT_PYTHON_VERSION"]
+    os = os.environ["INPUT_OS"]
+    lint = os.environ["INPUT_LINT"]
+    package_name = os.environ["INPUT_PACKAGE_NAME"]
+    
     #my_output = str(my_input)
 
     #print(f"::set-output name=myOUTPUT::{my_output}")
