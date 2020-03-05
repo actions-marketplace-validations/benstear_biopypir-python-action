@@ -10,8 +10,10 @@ def main():
     lint = os.environ["INPUT_LINT"]
     package_name = os.environ["INPUT_PACKAGE_NAME"]
     '''
-    os.system('echo $PWD')
-    os.system('ls -a')
+    
+    print(os.system('echo $PWD'))
+    
+    print(os.system('ls -a'))
     
     #my_output = str(my_input)
     #print(f"::set-output name=myOUTPUT::{my_output}")
@@ -19,3 +21,4 @@ def main():
     
 if __name__ == "__main__":
     main()
+    
