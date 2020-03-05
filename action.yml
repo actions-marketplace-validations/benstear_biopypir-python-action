@@ -4,15 +4,15 @@ author: "Ben Stear"
 inputs:
   myrepo:
     description: "name of your repo"
-    required: true
+    required: false
     default: ${{ github.repository }}
  python_version:
     description: "Python version to test package with"
-    required: true
+    required: false
     default: 3.6
  os:
     description: "Python version to test package with"
-    required: true
+    required: false
     default: [ubuntu-latest,macOS-latest]
  lint:
     description: "Conduct Linting"
@@ -20,10 +20,14 @@ inputs:
     default: true
  package_name:
     description: "Name of package"
-    required: true
-outputs:
-  myOUTPUT:
-    description: "Test result"
+    required: false
+#outputs:
+#  myOUTPUT:
+#    description: "Test result"
+#   myExitCode:
+#     description: "Exit code"
+     
+    
 runs:
   using: "docker"
   image: "Dockerfile"
