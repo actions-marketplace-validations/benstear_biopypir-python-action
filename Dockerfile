@@ -9,9 +9,11 @@ RUN pip install --target=/app numpy
 # https://github.com/GoogleContainerTools/distroless
 FROM gcr.io/distroless/python3-debian10
 COPY --from=builder /app /app
+COPY step_3.sh /step_3.sh
 WORKDIR /app
 ENV PYTHONPATH /app
 #CMD ["/app/main.py"]
-CMD ["ls -a"]
-CMD ["pwd"]
-CMD ["/step_3.sh"]
+#CMD ["ls -a"]
+#CMD ["pwd"]
+#CMD ["/step_3.sh"]
+RUN ./step_3.sh
