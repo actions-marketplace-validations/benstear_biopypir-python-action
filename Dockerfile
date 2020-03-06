@@ -15,5 +15,6 @@ ENV PYTHONPATH /app
 #CMD ["/app/main.py"]
 #CMD ["ls -a"]
 #CMD ["pwd"]
-CMD ["chmod +x step_3.sh"]
+#CMD ["chmod +x step_3.sh"]
+RUN chmod +x ./step_3.sh
 RUN ./step_3.sh
