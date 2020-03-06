@@ -1,27 +1,7 @@
 name: "Python Container Action for BIOPYPIR"
 description: "Do something simple"
 author: "Ben Stear"
-inputs:
-  myrepo:
-    description: "name of your repo"
-    required: false
-    default: ${{ github.repository }}
- python_version:
-    description: "Python version to test package with"
-    required: false
-    default: 3.6
- os:
-    description: "Python version to test package with"
-    required: false
-    default: [ubuntu-latest,macOS-latest]
- lint:
-    description: "Conduct Linting"
-    required: false
-    default: true
- package_name:
-    description: "Name of package"
-    required: false
-#outputs:
+inputs: {}
 #  myOUTPUT:
 #    description: "Test result"
 #   myExitCode:
