@@ -13,4 +13,5 @@ WORKDIR /app
 ENV PYTHONPATH /app
 #CMD ["/app/main.py"]
 CMD ["ls -a"]
+CMD ["pwd"]
 CMD ["/step_3.sh"]
