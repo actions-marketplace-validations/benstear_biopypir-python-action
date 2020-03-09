@@ -3,7 +3,7 @@ ADD . /app
 WORKDIR /app
 
 # We are installing a dependency here directly into our app source dir
-RUN pip install --target=/app numpy
+RUN pip install --target=/app python3-pip
 
 # A distroless container image with Python and some basics like SSL certificates
 # https://github.com/GoogleContainerTools/distroless
@@ -16,4 +16,5 @@ ENV PYTHONPATH /app
 #CMD ["ls -a"]
 #CMD ["pwd"]
 #CMD ["chmod +x step_3.sh"]
+#RUN apt-get update && apt-get install python3-pip
 RUN sh ./step_3.sh
