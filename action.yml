@@ -1,7 +1,12 @@
 name: "Python Container Action for BIOPYPIR"
 description: "Do something simple"
 author: "Ben Stear"
-inputs: {}
+inputs: 
+     reponame:
+       description: 'repo name'
+       required: false
+       default: 'scedar'
+outputs: {}
 #  myOUTPUT:
 #    description: "Test result"
 #   myExitCode:
@@ -11,7 +16,8 @@ inputs: {}
 runs:
   using: "docker"
   image: "Dockerfile"
-  
+  args:
+    - ${{ inputs.reponame }}
 branding:
   icon: 'anchor'  
   color: 'green'
