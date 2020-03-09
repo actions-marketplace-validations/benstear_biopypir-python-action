@@ -17,4 +17,3 @@ ENV PYTHONPATH /app
 #CMD ["pwd"]
 #CMD ["chmod +x step_3.sh"]
 RUN chmod +x ./step_3.sh
-RUN ./step_3.sh
