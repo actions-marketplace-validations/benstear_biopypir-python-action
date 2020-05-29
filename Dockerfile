@@ -3,18 +3,20 @@ ADD . /app
 WORKDIR /app
 
 # We are installing a dependency here directly into our app source dir
-RUN pip install --target=/app python3-pip
+RUN pip install --target=/app requests
+RUN pip install --target=/app --upgrade pip setuptools wheel
+RUN pip install --target=/app os
+RUN pip install --target=/app time
+RUN pip install --target=/app json
+RUN pip install --target=/app pandas 
+RUN pip install --target=/app tabulate 
+RUN pip install --target=/app glob
+RUN pip install --target=/app numpy 
 
 # A distroless container image with Python and some basics like SSL certificates
 # https://github.com/GoogleContainerTools/distroless
 FROM gcr.io/distroless/python3-debian10
 COPY --from=builder /app /app
-COPY step_3.sh /step_3.sh
 WORKDIR /app
 ENV PYTHONPATH /app
-#CMD ["/app/main.py"]
-#CMD ["ls -a"]
-#CMD ["pwd"]
-#CMD ["chmod +x step_3.sh"]
-#RUN apt-get update && apt-get install python3-pip
-RUN sh ./step_3.sh
+CMD ["/cmd/main.py"]
