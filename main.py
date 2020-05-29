@@ -44,9 +44,10 @@ if new:
     
 
 #def create_table(log_path_list):
+#print("::set-output name=myOutput::444")
     
-table = pd.DataFrame([data['Package'],'Gold','TaylorLab'])#,columns=['Package','Badge'])
-    
+df = pd.DataFrame([data['Package'],'Gold','TaylorLab'])#,columns=['Package','Badge'])
+df.to_csv('table1.csv',sep='\t')  
     
 
 '''
