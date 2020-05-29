@@ -1,9 +1,3 @@
-import os
-#import pandas  # noqa We are just importing this to prove the dependency installed correctly
-
-
-
-
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
@@ -44,11 +38,12 @@ if new:
     
 
 #def create_table(log_path_list):
-#print("::set-output name=myOutput::444")
+
     
 df = pd.DataFrame([data['Package'],'Gold','TaylorLab'])#,columns=['Package','Badge'])
 df.to_csv('table1.csv',sep='\t')  
-    
+
+print("::set-output name=table_output::df")
 
 '''
 def main():
