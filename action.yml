@@ -7,8 +7,8 @@ inputs:
        required: false
        default: 'scedar'
 outputs: {}
-#  myOUTPUT:
-#    description: "Test result"
+  table_output:
+    description: "Table"
 #   myExitCode:
 #     description: "Exit code"
      
