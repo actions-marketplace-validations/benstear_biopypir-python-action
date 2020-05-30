@@ -6,7 +6,7 @@ inputs:
        description: 'repo name'
        required: false
        default: 'scedar'
-outputs: {}
+outputs:
   table_output:
     description: "Table"
 #   myExitCode:
