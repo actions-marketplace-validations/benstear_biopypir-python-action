@@ -43,7 +43,7 @@ if new:
 df = pd.DataFrame([data['Package'],'Gold','TaylorLab'])#,columns=['Package','Badge'])
 df.to_csv('table1.csv',sep='\t')  
 
-print("::set-output name=table_output::df")
+print("::set-output name=table_output::{df}")
 
 '''
 def main():
@@ -61,9 +61,10 @@ def main():
     
     #my_output = str(my_input)
     #print(f"::set-output name=myOUTPUT::{my_output}")
-    #print(f"www.github.com/{my_input}")
+    print(f"www.github.com/{my_input}")
 '''
 
 if __name__ == "__main__":
     main()
+    print("www.github.com/benstear")
     
