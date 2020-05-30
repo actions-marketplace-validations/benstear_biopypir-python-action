@@ -35,8 +35,6 @@ if new:
                 data = json.load(f)
 
 #log1 =  json.loads(data)
-    
-
 #def create_table(log_path_list):
 
     
@@ -46,8 +44,9 @@ df.to_csv('table1.csv',sep='\t')
 x = 123456
 print("::set-output name=table_output::{x}")
 
-
+print(os.system('ls -a'))
 print("www.github.com/benstear")
+print("here from gh action)
 
 '''
 def main():
